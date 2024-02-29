@@ -1,0 +1,11 @@
+<main>
+    <div class="catalog">
+        <div class="nftblock" *ngFor="let prod of nfts">
+            <div>
+                <img [src]="prod.photourl"/>
+                <p>{{prod.id}}</p>
+                <h2>{{prod.price}}</h2>
+            </div>
+        </div>
+    </div>
+</main>

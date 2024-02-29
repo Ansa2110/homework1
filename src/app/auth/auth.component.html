@@ -1,0 +1,13 @@
+<div class="bodyauth">
+    <div class="container">
+        <h2>Authorization form</h2>
+        <div class="inputs">
+            <input type="login" placeholder="Login" #inputLogin>
+            <input type="password" placeholder="Password" #inputPassword>
+        </div>
+        <button type="button" (click)="enterUser()">Login</button>
+        <div class="invalid">
+            <p *ngIf="isVisible">Invalid login or password. Please try again.</p>
+        </div>
+    </div>
+</div>

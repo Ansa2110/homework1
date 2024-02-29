@@ -1,0 +1,30 @@
+main
+{
+    background-color: #00C9A7;
+}
+.catalog
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.nftblock
+{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #12192c;
+    margin-top: 50px;
+    color: white;
+    border-radius: 5px;
+}
+.nftblock img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+}
