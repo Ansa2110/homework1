@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Directive, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './about/about.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
+import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
+import { ColorTextPipe } from './directives/color.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,12 +25,15 @@ import { CatalogComponent } from './catalog/catalog.component';
     FooterComponent,
     ProfileComponent,
     AboutComponent,
-    CatalogComponent
+    CatalogComponent,
+    DirectivesComponent,
+    ColorTextPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
