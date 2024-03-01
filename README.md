@@ -1,3 +1,5 @@
+In the master branch: HW for routing and auth
+In the task-for-directives: HW directives
 # Homework1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
