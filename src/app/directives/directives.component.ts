@@ -22,11 +22,11 @@ export class DirectivesComponent {
     {
       this.color = "";
     }
-    else if (/^[a-zA-Z0-9]*$/.test(this.inputValue) == false)
+    else if (!(/^[a-zA-Z0-9]*$/.test(this.inputValue)))
     {
       this.color = "red";
     }
-    else if (isNaN(Number(this.inputValue)) == false)
+    else if (!(isNaN(Number(this.inputValue))) && Number(this.inputValue)!==0 && Number(this.inputValue)!==1)
     {
         const number = Number(this.inputValue);
         let isPrime = true;
@@ -43,6 +43,10 @@ export class DirectivesComponent {
         } else {
           this.color = "green";
         }
+    }
+    else
+    {
+      this.color = "";
     }
  }
 
