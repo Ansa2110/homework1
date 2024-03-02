@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { FormControl} from '@angular/forms';
 
 
 @Component({
@@ -6,18 +7,23 @@ import { Component} from '@angular/core';
   templateUrl: './directives.component.html',
   styleUrl: './directives.component.scss'
 })
-export class DirectivesComponent {
+export class DirectivesComponent{
 
-  inputValue = "";
+  myForm = new FormControl('');
   color = "";
   savedText:{text: string, color: string}[] = []
+
+  inputValue: string = this.myForm.value || '';
+
   saveText()
   {
+     this.inputValue = this.myForm.value || ""
      this.savedText.push({text:this.inputValue, color: this.color})
      this.inputValue = ""
      this.color = ""
   }
   checkInput() {
+    this.inputValue = this.myForm.value || ""
     if(this.inputValue == "")
     {
       this.color = "";

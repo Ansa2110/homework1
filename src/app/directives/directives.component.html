@@ -1,5 +1,5 @@
 <div>
-    <input type="text" [(ngModel)]="inputValue" (input)="checkInput()"><button type="button" (click)="saveText()">Save</button>
+    <input type="text" [formControl]="myForm"  (input)="checkInput()"><button type="button" (click)="saveText()">Save</button>
     <div [ngSwitch]="color">
         <p *ngSwitchCase="'red'" style="color: red;">Спецсимволы запрещены</p>
         <p *ngSwitchCase="'green'" style="color: green;">Вы ввели составное число</p>
