@@ -1,4 +1,4 @@
-HOMEWORK FOR DIRECTIVES BY REACTIVE FORM(I USED FORMCONTROL)
+HOMEWORK FOR DIRECTIVES BY REACTIVE FORM(I USED FORMCONTROL), CHECK THE ONLY SRC/APP/DIRECTIVES
 # Homework1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
