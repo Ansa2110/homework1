@@ -1,4 +1,5 @@
 HOMEWORK FOR ROUTING AND AUTH
+Логин и пароль можете взять отсюда /src/app/auth/auth.component.ts
 # Homework1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
