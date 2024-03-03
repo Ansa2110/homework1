@@ -1,4 +1,4 @@
-HOMEWORK FOR ROUTING AND AUTH
+HOMEWORK FOR ROUTING AND AUTH 
 Логин и пароль можете взять отсюда /src/app/auth/auth.component.ts
 # Homework1
 
