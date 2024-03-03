@@ -5,7 +5,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { AuthComponent } from './auth/auth.component';
 import { AboutComponent } from './about/about.component';
 import { CatalogComponent } from './catalog/catalog.component';
-import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/auth', pathMatch: 'full' },

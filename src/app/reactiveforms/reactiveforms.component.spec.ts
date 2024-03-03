@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DirectivesComponent } from './directives.component';
+import { ReactiveformsComponent } from './reactiveforms.component';
 
-describe('DirectivesComponent', () => {
-  let component: DirectivesComponent;
-  let fixture: ComponentFixture<DirectivesComponent>;
+describe('ReactiveformsComponent', () => {
+  let component: ReactiveformsComponent;
+  let fixture: ComponentFixture<ReactiveformsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DirectivesComponent]
+      imports: [ReactiveformsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DirectivesComponent);
+    fixture = TestBed.createComponent(ReactiveformsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

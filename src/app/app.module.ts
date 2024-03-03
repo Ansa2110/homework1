@@ -13,8 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { CatalogComponent } from './catalog/catalog.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DirectivesComponent } from './directives/directives.component';
-import { ColorTextPipe } from './directives/color.pipe';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { ColorTextPipe } from './directives/color.pipe';
     ProfileComponent,
     AboutComponent,
     CatalogComponent,
-    DirectivesComponent,
-    ColorTextPipe
+    ReactiveformsComponent
   ],
   imports: [
     BrowserModule,

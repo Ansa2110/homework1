@@ -1,0 +1,16 @@
+<form [formGroup]="myForm" class="form" (submit)="onSubmit()">
+    <input type="text" placeholder="Введите имя" formControlName="firstname">
+    <input type="text" placeholder="Введите фамилию" formControlName="lastname">
+    <input type="text" placeholder="Введите номер" formControlName="phone">
+    <input type="text" placeholder="Введите email" formControlName="email">
+    <div formArrayName="interests">
+        <div class="interest" *ngFor="let interest of interests.controls; let i = index" [formGroupName]="i">
+            <input type="text" formControlName="interest" placeholder="Ваши интересы">
+            <div class="btn">
+                <button type="button" (click)="addInterest()">Add</button>
+                <button type="button" (click)="removeInterest(i)" *ngIf="interests.length!=1">Delete</button>
+            </div>
+        </div>
+    </div>
+    <button type="submit" [disabled]="!myForm.valid">Отправить</button>
+</form>
