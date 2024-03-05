@@ -1,20 +1,18 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'
+import { RouterOutlet } from '@angular/router';
+import { CatFactComponent } from "./cat-fact/cat-fact.component";
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports:
+    [
+      RouterOutlet,
+      CatFactComponent,
+    ]
 })
 export class AppComponent {
-  title = 'homework1';
-  isLoggedIn: boolean = false;
-  constructor(private router: Router) {}
-
-  handleValidUserChange(isValidUser: boolean) {
-    if(this.isLoggedIn==false) {
-      this.router.navigate([''])
-    }
-    this.isLoggedIn = isValidUser;
-
-  }
+  title = 'my-ngrx-app';
 }
