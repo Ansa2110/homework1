@@ -1,3 +1,4 @@
+Здесь первая домашка по auth в localstorage и routing, здесь я также перепутал ветки и нечаянно залились из ngrx-task json файлы в master ветку, но src не было изменено
 # MyNgrxApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
