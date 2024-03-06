@@ -1,4 +1,4 @@
-HOMEWORK FOR REACTIVE FORMS HW2, ONLY IN SRC/APP/DIRECTIVES
+Домашка про ngrx-api, где нужно было вытаскивать данные с api по state management, тут я случайно объединил все домашки в одну, я запутался с git-ом в visual studio. Папки которые были применены к дз: cat-fact, store, service. 
 # Homework1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
