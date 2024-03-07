@@ -1,0 +1,13 @@
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+}
+span
+{
+    font-size: 14px;
+    font-weight: bolder;
+}
