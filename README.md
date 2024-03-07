@@ -1,3 +1,4 @@
+Домашка про login/registration через NgRx, я эту домашку не смог доделать, я сгорел, register пытался сделать не получилось
 # Smhw3
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
