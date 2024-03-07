@@ -5,9 +5,9 @@ import { routes } from './app.routes';
 import { provideEffects } from '@ngrx/effects';
 import { provideHttpClient } from '@angular/common/http';
 import { provideStore } from '@ngrx/store';
-import { catFactReducer } from './store/cat-fact.reducer';
-import { CatFactEffects } from './store/cat-fact.effects';
+import { userReducer } from './store/user.reducer'
+import { UserEffects } from './store/user.effects';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideEffects(), provideStore({catFact: catFactReducer}), provideEffects([CatFactEffects]), provideHttpClient()]
+  providers: [provideRouter(routes), provideHttpClient(), provideEffects([UserEffects]), provideStore({auth: userReducer})]
 };
